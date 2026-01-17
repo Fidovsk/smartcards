@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <base target="_self">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>О проекте — Умные Карточки</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#3B82F6",
+            secondary: "#10B981",
+            accent: "#F59E0B"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="min-h-screen bg-gray-50 font-sans antialiased">
+  <!-- HEADER (подгружается автоматически) -->
+  <div id="site-header"></div>
+
+  <!-- ОСНОВНОЙ КОНТЕНТ -->
+  <main class="container mx-auto px-4 py-10">
+    <div class="bg-white rounded-xl shadow-md p-8">
+      <h1 class="text-3xl font-bold text-gray-800 mb-4">О проекте</h1>
+
+      <p class="text-gray-600 leading-relaxed mb-6">
+        <strong>«Умные Карточки»</strong> — это онлайн-сервис, который помогает
+        быстро превращать конспекты, лекции и учебные тексты
+        в удобные материалы для повторения.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 bg-gray-50 rounded-xl border">
+          <h3 class="font-bold mb-2">
+            <i class="fas fa-bolt text-primary mr-2"></i> Для чего это?
+          </h3>
+          <p class="text-gray-600">
+            Чтобы не перечитывать лекции по десять раз, а учить материал
+            через короткие определения, карточки и вопросы.
+          </p>
+        </div>
+
+        <div class="p-6 bg-gray-50 rounded-xl border">
+          <h3 class="font-bold mb-2">
+            <i class="fas fa-shield-alt text-primary mr-2"></i> Безопасность
+          </h3>
+          <p class="text-gray-600">
+            Текст обрабатывается прямо в браузере.
+            Ничего не сохраняется на сервере без вашего согласия.
+          </p>
+        </div>
+
+        <div class="p-6 bg-gray-50 rounded-xl border">
+          <h3 class="font-bold mb-2">
+            <i class="fas fa-graduation-cap text-primary mr-2"></i> Для кого?
+          </h3>
+          <p class="text-gray-600">
+            Для студентов, школьников и всех, кто учится
+            и хочет запоминать материал быстрее.
+          </p>
+        </div>
+
+        <div class="p-6 bg-gray-50 rounded-xl border">
+          <h3 class="font-bold mb-2">
+            <i class="fas fa-lightbulb text-primary mr-2"></i> В планах
+          </h3>
+          <p class="text-gray-600">
+            Тестовый режим, сохранение наборов, личный кабинет
+            и улучшенный анализ текста.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER (подгружается автоматически) -->
+  <div id="site-footer"></div>
+
+  <!-- JS для подгрузки header/footer -->
+  <script src="assets/site.js"></script>
+</body>
+</html>
